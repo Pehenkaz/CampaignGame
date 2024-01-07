@@ -34,4 +34,7 @@ public class Campaign {
 
     @Column(name = "count_hours")
     private Double count_hours;
+
+    @Column(name = "image")
+    private String image;
 }

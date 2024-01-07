@@ -20,4 +20,6 @@ public class CampaignDto {
     private String genre;
 
     private double count_hours;
+
+    private String image;
 }

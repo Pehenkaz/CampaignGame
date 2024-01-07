@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 @AllArgsConstructor
 @RestController
-@RequestMapping("/Campaigns")
+@RequestMapping("/campaigns")
 public class CampaignsController {
 
     private final CampaignsService CampaignsService;

@@ -10,7 +10,7 @@ public class PageDto {
 
     private int pageNumber = 0;
 
-    private int pageSize = 5;
+    private int pageSize = 20;
 
     private Sort.Direction sortDirection = Sort.Direction.ASC;
 
