@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const apiInstance = axios.create({
-  baseURL: "https://fakestoreapi.com",
+  baseURL: "http://localhost:8080",
 });
