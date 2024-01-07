@@ -14,7 +14,6 @@ type HomeProps = {
 
 const Home: FC<HomeProps> = ({ campaigns: initialCampaigns }) => {
   const { campaigns, isLoading, refetch } = useCampaigns(initialCampaigns);
-
   return (
     <>
       <Head>
@@ -37,7 +36,10 @@ const Home: FC<HomeProps> = ({ campaigns: initialCampaigns }) => {
 export default Home;
 
 export const getServerSideProps: GetServerSideProps<HomeProps> = async () => {
-  const response = await api.campaign.getCampaigns();
+  const response = await api.campaign.getCampaigns({
+    limit:'10',
+    sort:'asc'
+  });
 
-  return { props: { products: response.data } };
+  return { props: { campaigns: response.data } };
 };

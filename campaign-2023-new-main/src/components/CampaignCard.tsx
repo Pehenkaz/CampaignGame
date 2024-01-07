@@ -10,7 +10,7 @@ type CampaignCardProps = {
 
 export const CampaignCard: FC<CampaignCardProps> = ({ campaign }) => {
   return (
-    <Link href={`/product/${campaign.id}`}>
+    <Link href={`/campaigns/${campaign.id}`}>
       <div className="flex flex-col gap-3">
         <div className="flex h-96 items-center justify-center bg-white p-4">
           <img
